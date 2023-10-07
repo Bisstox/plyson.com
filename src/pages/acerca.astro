@@ -1,0 +1,166 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Layout from '~/layouts/PageLayout.astro';
+
+const metadata = {
+  title: 'Acerca de',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Acerca de"
+    image={{
+      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      alt: 'Caos Image',
+    }}
+  >
+    <Fragment slot="title">
+      Conoce a Plyson: <br />
+      Nuestra Historia,<span class="text-accent dark:text-white highlight"> Nuestra Pasión</span>
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Entra en el corazón de nuestra historia, conoce a nuestro equipo apasionado y descubre cómo transformamos tu presencia en línea.
+    </Fragment>
+  </Hero>
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Rasgos Distintivos de Plyson"
+    subtitle="Nueve atributos que nos definen y destacan en el mundo <br />del marketing digital y la formación empresarial."
+    columns={3}
+    isBeforeContent={true}
+    items={[
+      {
+        title: 'Creatividad',
+        description:
+          'Nuestra creatividad impulsa soluciones impactantes y únicas que destacan en un mundo digital saturado.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Adaptabilidad',
+        description:
+          'Nos ajustamos a las necesidades cambiantes de tu negocio para lograr resultados excepcionales.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Enfoque Personal',
+        description:
+          'Cada cliente recibe un trato personalizado y soluciones adaptadas a sus objetivos únicos.',
+        icon: 'tabler:template',
+      },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    columns={3}
+    isAfterContent={true}
+    items={[
+      {
+        title: 'Métricas Claras',
+        description:
+          'Proporcionamos datos tangibles y métricas transparentes para medir el éxito y optimizar estrategias.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Experiencia Sólida',
+        description:
+          'Años de experiencia respaldan nuestra capacidad para brindar soluciones efectivas en marketing y formación.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Empatía Cliente',
+        description:
+          'Comprendemos tus desafíos y metas, trabajando juntos para alcanzar el éxito de tu negocio.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Estrategia Integral',
+        description:
+          'Ofrecemos soluciones holísticas que abarcan desde la creación de contenido hasta estrategias digitales.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Innovación Tecnológica',
+        description:
+          'Abrazamos tecnologías de vanguardia para proporcionar soluciones eficientes y atractivas.',
+        icon: 'tabler:template',
+      },
+      {
+        title: 'Resultados Tangibles',
+        description:
+          'Nuestro enfoque está en obtener resultados medibles y demostrables que impulsen el éxito empresarial.',
+        icon: 'tabler:template',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      alt: 'Colorful Image',
+    }}
+  />
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="Nuestros Cimientos: Valores en Acción"
+    subtitle="En Plyson, nuestros valores son la brújula que guía cada decisión y acción. Conoce lo que nos motiva y define."
+    items={[
+      {
+        title: 'Competitividad e Innovación',
+        description:
+          'Impulsamos la competitividad y la innovación en cada aspecto de nuestro trabajo. Buscamos constantemente nuevas formas de mejorar y crecer, tanto para nosotros como para nuestros clientes.',
+      },
+      {
+        title: 'Visión Vanguardista',
+        description:
+          'Nos guiamos por una visión vanguardista que nos permite anticiparnos a las tendencias y mantenernos a la vanguardia en el mundo del marketing digital y la creación de contenido. Buscamos liderar y marcar el camino hacia el futuro.',
+      },
+      {
+        title: 'Integridad',
+        description:
+          'La integridad es el núcleo de nuestro negocio. Operamos con honestidad y ética en todas nuestras interacciones con clientes, colaboradores y socios. Construimos relaciones basadas en la confianza y la transparencia.',
+      },
+    ]}
+  />
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps2
+    title="Nuestros Logros "
+    subtitle="Descubre algunos de los hitos que nos enorgullecen en nuestro viaje hacia el éxito empresarial."
+    isReversed={true}
+    callToAction={{
+      text: 'Contáctanos',
+      href: '/contacto',
+    }}
+    items={[
+      {
+        title: 'Crecimiento Sostenido',
+        description: 'Hemos experimentado un crecimiento constante, expandiendo nuestra cartera de clientes y servicios a nivel internacional.',
+        icon: 'tabler:globe',
+      },
+      {
+        title: 'Impacto Medible',
+        description:
+          'Hemos ayudado a numerosos clientes a lograr un aumento significativo en sus conversiones y ROI.',
+        icon: 'tabler:message-star',
+      },
+      {
+        title: 'Comunidad Leal',
+        description:
+          'Hemos construido una comunidad de clientes leales que confían en nosotros para impulsar su éxito digital.',
+        icon: 'tabler:award',
+      },
+    ]}
+  />
+
